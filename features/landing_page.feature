@@ -1,0 +1,37 @@
+@landing_page
+Feature: CukeHub Landing Page
+		 In order to make Amigos aware of the 4th Amigo
+		 CukeHub needs a descriptive informational Landing Page
+
+Scenario: The Fourth Amigo tag line displays for authenticated users
+  Given I am an authenticated user
+   When I visit the landing page
+   Then I should see "The Fourth Amigo" on the page
+   		 
+Scenario: The Fourth Amigo tag line displays for unauthenticated users
+  Given I am an unauthenticated user
+   When I visit the landing page
+   Then I should see "The Fourth Amigo" on the page
+   
+Scenario: More information can be found in the About section
+  Given I am an unauthenticated user
+    And I visit the landing page
+   When I visit the About section
+   Then I should see "What is a Cuke?" on the page
+    And I should see "What are the Three Amigos?" on the page
+	
+Scenario: Amigos can reach the twitter page
+  Given I am an unauthenticated user
+    And I visit the landing page
+    And I visit the About section
+    And I scroll down to the bottom of the page
+	When I visit the CukeHub twitter page from the twitter icon
+	Then I should see the latest tweets from CukeHub
+
+Scenario: Amigos can review the Terms and Conditions
+  Given I am an unauthenticated user
+    And I visit the landing page
+    And I visit the About section
+    And I scroll down to the bottom of the page
+	When I visit the CukeHub Terms and Conditions page
+	Then I should see Terms of User

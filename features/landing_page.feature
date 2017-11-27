@@ -19,7 +19,8 @@ Scenario: More information can be found in the About section
    When I visit the About section
    Then I should see "What is a Cuke?" on the page
     And I should see "What are the Three Amigos?" on the page
-	
+
+@twitter	
 Scenario: Amigos can reach the twitter page
   Given I am an unauthenticated user
     And I visit the landing page
@@ -34,4 +35,4 @@ Scenario: Amigos can review the Terms and Conditions
     And I visit the About section
     And I scroll down to the bottom of the page
 	When I visit the CukeHub Terms and Conditions page
-	Then I should see Terms of User
+	Then I should see "TERMS OF USE" on the page

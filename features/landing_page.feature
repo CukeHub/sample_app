@@ -28,6 +28,14 @@ Scenario: Amigos can reach the twitter page
     And I scroll down to the bottom of the page
    When I visit the CukeHub twitter page from the twitter icon
    Then I should see the latest tweets from CukeHub
+   
+@api_page	
+Scenario: Amigos can reach the CukeHub API page
+  Given I am an unauthenticated user
+    And I visit the landing page
+    And I click the API link
+   When I enter the new tab
+   Then I should see "CukeHub API" on the page
 
 Scenario: Amigos can review the Terms and Conditions
   Given I am an unauthenticated user

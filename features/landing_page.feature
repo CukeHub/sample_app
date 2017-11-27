@@ -26,13 +26,13 @@ Scenario: Amigos can reach the twitter page
     And I visit the landing page
     And I visit the About section
     And I scroll down to the bottom of the page
-	When I visit the CukeHub twitter page from the twitter icon
-	Then I should see the latest tweets from CukeHub
+   When I visit the CukeHub twitter page from the twitter icon
+   Then I should see the latest tweets from CukeHub
 
 Scenario: Amigos can review the Terms and Conditions
   Given I am an unauthenticated user
     And I visit the landing page
     And I visit the About section
     And I scroll down to the bottom of the page
-	When I visit the CukeHub Terms and Conditions page
-	Then I should see "TERMS OF USE" on the page
+   When I visit the CukeHub Terms and Conditions page
+   Then I should see "TERMS OF USE" on the page

@@ -15,7 +15,7 @@
 7. ```gem install bundler```
 8. ```bundle install```
 9. ```thor list```
-10. ```thor chrome```
+10. ```thor set:chrome```
 11. ```cucumber features```
 12. Vist the CukeHub [Sample App](https://cukehub.com/apps/91) to view results.
 

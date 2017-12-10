@@ -28,7 +28,6 @@ Scenario: Amigos can reach the twitter page
     And I scroll down to the bottom of the page
    When I visit the CukeHub twitter page from the twitter icon
    Then I should see the latest tweets from CukeHub
-   And I should eb on the "https://twitter.com/cukehub" page
    
 @api_page	
 Scenario: Amigos can reach the CukeHub API page

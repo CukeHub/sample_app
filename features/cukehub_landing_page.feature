@@ -17,7 +17,7 @@ Scenario: More information can be found in the About section
   Given I am an unauthenticated user
     And I visit the landing page
    When I visit the About section
-   Then I should see "What is a Cuke!?" on the page
+   Then I should see "What is a Cuke?" on the page
     And I should see "If CukeHub is the Fourth Amigo, who are the other Three Amigos?" on the page
 
 @twitter	

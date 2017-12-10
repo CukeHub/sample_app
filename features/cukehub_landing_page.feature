@@ -27,7 +27,7 @@ Scenario: Amigos can reach the twitter page
     And I visit the About section
     And I scroll down to the bottom of the page
    When I visit the CukeHub twitter page from the twitter icon
-   Then I should see the latest tweets from CukeHub
+   Then I should see tweets from CukeHub
    
 @api_page	
 Scenario: Amigos can reach the CukeHub API page

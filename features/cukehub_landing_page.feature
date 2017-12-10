@@ -6,7 +6,7 @@ Feature: CukeHub Landing Page
 Scenario: The Fourth Amigo tag line displays for authenticated users
   Given I am an authenticated user
    When I visit the landing page
-   Then I should see "The Fourth Amigo" on the page
+   Then I should see "The Fourth! Amigo" on the page
    		 
 Scenario: The Fourth Amigo tag line displays for unauthenticated users
   Given I am an unauthenticated user

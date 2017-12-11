@@ -3,16 +3,19 @@ Feature: CukeHub Landing Page
 		 In order to make Amigos aware of the 4th Amigo
 		 CukeHub needs a descriptive informational Landing Page
 
+@one
 Scenario: The Fourth Amigo tag line displays for authenticated users
   Given I am an authenticated user
    When I visit the landing page
    Then I should see "The Fourth Amigo" on the page
-   		 
+
+@two
 Scenario: The Fourth Amigo tag line displays for unauthenticated users
   Given I am an unauthenticated user
    When I visit the landing page
    Then I should see "The Fourth Amigo" on the page
-   
+
+@three
 Scenario: More information can be found in the About section
   Given I am an unauthenticated user
     And I visit the landing page
@@ -20,7 +23,7 @@ Scenario: More information can be found in the About section
    Then I should see "What is a Cuke?" on the page
     And I should see "If CukeHub is the Fourth Amigo, who are the other Three Amigos?" on the page
 
-@twitter	
+@one @twitter
 Scenario: Amigos can reach the twitter page
   Given I am an unauthenticated user
     And I visit the landing page
@@ -30,7 +33,7 @@ Scenario: Amigos can reach the twitter page
    Then I should see the latest tweets from CukeHub
    And I should be on the "https://twitter.com/cukehub" page
    
-@api_page	
+@two
 Scenario: Amigos can reach the CukeHub API page
   Given I am an unauthenticated user
     And I visit the landing page
@@ -38,6 +41,7 @@ Scenario: Amigos can reach the CukeHub API page
    When I enter the new tab
    Then I should see "CukeHub API" on the page
 
+@three
 Scenario: Amigos can review the Terms and Conditions
   Given I am an unauthenticated user
     And I visit the landing page

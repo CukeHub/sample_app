@@ -26,9 +26,10 @@ namespace :build do
 
   desc "Runs all cukes with @two tag"
   task :two do
+    sleep 1
       Bundler.with_clean_env do
       console_output = ""
-      IO.popen("thor set:chrome && cucumber -t @two", 'r+') do |pipe|
+      IO.popen("thor set:safari && cucumber -t @two", 'r+') do |pipe|
         puts console_output = pipe.read
         pipe.close_write
       end
@@ -37,9 +38,10 @@ namespace :build do
 
   desc "Runs all cukes with @three tag"
   task :three do
+    sleep 2
       Bundler.with_clean_env do
       console_output = ""
-      IO.popen("thor set:chrome && cucumber -t @three", 'r+') do |pipe|
+      IO.popen("thor set:firefox && cucumber -t @three", 'r+') do |pipe|
         puts console_output = pipe.read
         pipe.close_write
       end

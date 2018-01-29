@@ -8,7 +8,7 @@ Scenario: The Fourth Amigo tag line displays for authenticated users
   Given I am an authenticated user
    When I visit the landing page
    Then I should see "The Fourth Amigo" on the page
-   THen I should NOT see "The Third Amigo" on the page
+   Then I should NOT see "The Third Amigo" on the page
 
 @two
 Scenario: The Fourth Amigo tag line displays for unauthenticated users
